@@ -13,7 +13,9 @@
         <div id="header">
             <div class="container">
                 <nav>
-                    <img src="images/logo.png" alt="Logo" class="logo">
+                    <a href="index.html" id="logo">
+                        <img src="images/logo.png" alt="Logo" class="logo">
+                    </a>
                     <ul>
                         <li> <a href="#header">Home</a></li>
                         <li> <a href="#about">About</a></li>
@@ -24,8 +26,16 @@
                 </nav>
                 <div class="header-content">
                     <div class="header-text">
-                        <p>Programmer</p>
-                        <h1 class="typing">Hi, I'm <span>Hoor</span> <br> Amir From Saudi Arabia</h1>
+                        <h1>Building the Future of AI & Web</h1>
+                        <h2>Hi, I'm <span>Hoor</span> Amir</h2>
+                        <p><span id="typed-text"></span></p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/hoor.amir.09?igsh=MXdnZ2I4OTZ4bTkyeQ=="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/hoor-09"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/hoor-amir-449a90352"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <a href="#portfolio" class="cta-btn">See My Work</a>
                     </div>
                     <div class="header-image">
                         <div class="image-bg"></div>
@@ -41,6 +51,7 @@
             <div class="row">
                 <div class="about-col-1" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/background1.png" alt="">
+                    <img src="images/image.png" alt="">
                 </div>
                 <div class="about-col-2" data-aos="fade-up" data-aos-duration="1000">
                     <h1 class="sub-title">About Me</h1>
@@ -63,6 +74,35 @@
 
                                 <li><span>App developent</span><br> Building Android/IOS apps</li>
                             </ul>
+
+                            <div class="skills">
+                                <h3>Languages</h3>
+                                <div class="skill">
+                                    <span class="skill-name">HTML</span>
+                                    <div class="skill-bar">
+                                        <span style="width: 95%;"></span>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill-name">CSS</span>
+                                    <div class="skill-bar">
+                                        <span style="width: 85%;"></span>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill-name">JavaScript</span>
+                                    <div class="skill-bar">
+                                        <span style="width: 75%;"></span>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill-name">Python</span>
+                                    <div class="skill-bar">
+                                        <span style="width: 90%;"></span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div class="tab-contents" id="experience" data-aos="fade-left" data-aos-duration="1000">
@@ -113,7 +153,7 @@
 
                 <div data-aos="fade-left" data-aos-duration="1000">
                     <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>App <br>Development</h2>
+                    <h2>App Development</h2>
                     <ul>
                         <li>Mobile & web app development</li>
                         <li>Cross-platform solutions (React Native, Flutter, etc.)</li>
@@ -204,9 +244,28 @@
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-            </div>
-            <a href="#" class="btn">See more</a>
+            
 
+                <div class="work hidden" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="images/password.png" alt="">
+                    <div class="layer">
+                        <h3>Instant Password Generator</h3>
+                        <p>A tool that creates secure passwords based on your chosen category.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+    
+                <div class="work hidden" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="images/baloon.png" alt="">
+                    <div class="layer">
+                        <h3>Birthday Animation</h3>
+                        <p>An animation with fireworks, floating balloons, and a flip card revealing a chocolate cake.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn" id="seeMoreBtn">See more</button>
         </div>
     </div>
     <!-- -------------------Contact------------------- -->
@@ -239,36 +298,27 @@
             </div>
         </div>
      </div>
+    
     <footer>
         <div class="copyright">
             <p>Copyright © 2024 Hoor Amir. All rights reserved.</p>
         </div>
-</footer> 
-      
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyZOX3Nj5cYF1XBzoc93ev-S5jWkr8uTF6SJwhWS30s7KkBm92jh8Lmolml6mkpYkDElg/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent succesfully!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-      </script>
+    </footer> 
 
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-          AOS.init();
-      </script>
-      
-    <script src="portfolio.js"></script>
+    <!-- Particles container -->
+    <div id="particles-js"></div>
+
+    <!-- External JavaScript files -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+    <!-- Portfolio JS file -->
+    <script src="portfolio.js"></script> 
+
+    <!-- AOS library for animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS animations
+    </script>
 </body >
 </html>

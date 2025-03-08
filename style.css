@@ -7,6 +7,8 @@
 body{
     background: rgb(0, 0, 0);
     color: white;
+    position: relative;
+    z-index: 1;
 }
 
 html{
@@ -16,7 +18,11 @@ html{
 #header{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    /* background-color: black; */
+    position: relative;
+    z-index: 2; /* Ensures header stays above the particles */
+    padding: 50px;
+    color: white;
 }
 
 .header-content {
@@ -55,12 +61,8 @@ html{
 }
 
 /* Styling for the span tag inside h1 */
-.typing span {
-    color: #26a09c;  /* Adjust the color for the name 'Hoor' */
-}
-
-.typing {
-    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+.header-text span:nth-of-type(1) {
+    color: #26a09c; /* Color only the first span (your name 'Hoor') */
 }
 
 .container{
@@ -116,14 +118,19 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    color: white;
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
 
-.header-text h1 span{
+.header-text h2 span{
     color: #26a09c;
+}
+
+#typed-text{
+    color: white;
 }
 
 .header-img {
@@ -142,6 +149,32 @@ nav ul li a:hover::after{
     margin-left: 20px;
     margin-top: 300px;
 }
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Keeps the particles behind other content */
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #26a09c;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background: #1a6b68;
+}
+
 
 /* -------------------About------------------- */
 #about{
@@ -174,9 +207,10 @@ nav ul li a:hover::after{
     padding-right: 20px;
 }
 .about-col-1 img{
-    width: 590px;
-    height: 500px;
-    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #26a09c;
+    border-radius: 20px;
     margin-left: auto;
 }
 
@@ -241,9 +275,40 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 
+.skills {
+    margin: 20px 0;
+}
+
+.skill {
+    margin: 10px 0;
+}
+
+.skill-name {
+    display: inline-block; /* Keep it on the same line as the bar */
+    margin-right: 10px; /* Space between name and bar */
+    font-weight: bold;
+}
+
+.skill-bar {
+    height: 8px;
+    width: 80%; /* Overall container width */
+    background: rgba(255, 255, 255, 0.2); /* Background of the bar */
+    border-radius: 5px;
+    position: relative;
+}
+
+.skill-bar span {
+    height: 100%; /* Full height of the skill bar */
+    display: block;
+    background: #26a09c; /* Color of the progress */
+    border-radius: 5px;
+    transition: width 0.5s; /* Smooth transition for width change */
+}
+
 /* -------------------Services------------------- */
 #services{
     padding: 70px 0;
+    background-color: #000000;
 }
 
 .services-list{
@@ -309,9 +374,11 @@ nav ul li a:hover::after{
 #portfolio{
     padding: 170px 0;
     z-index: 1;
+    background-color: #000000;
 }
 
-.work-list{
+.work-list,
+.hidden-works{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
@@ -322,6 +389,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .work img{
@@ -339,8 +407,6 @@ nav ul li a:hover::after{
     position: relative;
     top: 10px;
 }
-
-
 
 .layer{
     width: 100%;
@@ -383,9 +449,26 @@ nav ul li a:hover::after{
     height: 100%;
 }
 
+/* Hide the extra works initially but keep them in the layout */
+.hidden-works {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+}
+
+/* Show works with smooth animation */
+.hidden-works.show {
+    opacity: 1;
+    max-height: 1000px; /* Large enough to fit all items */
+}
+
+
+
 .btn{
     display: block;
     margin: 50px auto;
+    background-color: rgb(0, 0, 0);
     width: fit-content;
     border: 1px solid #26a09c;
     padding: 14px 50px;
@@ -402,6 +485,7 @@ nav ul li a:hover::after{
 /* ----------------Contact---------------- */
 #contact{
     padding: 170px;
+    background-color: #000000;
 }
 
 .contact-left{
@@ -437,12 +521,17 @@ nav ul li a:hover::after{
 
 .social-icons a:hover{
     color: #26a09c;
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .btn.btn2{
     display: inline-block;
     background: #26a09c;
+}
+
+.btn.btn2:hover{
+    background-color: #186967;
+    transform: translateY(-3px);
 }
 
 .contact-right form{
@@ -459,7 +548,7 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-.form btn2{
+.form .btn2{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
