@@ -9,316 +9,632 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-    <hero>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <a href="index.html" id="logo">
-                        <img src="images/logo.png" alt="Logo" class="logo">
-                    </a>
-                    <ul>
-                        <li> <a href="#header">Home</a></li>
-                        <li> <a href="#about">About</a></li>
-                        <li> <a href="#services">Services</a></li>
-                        <li> <a href="#portfolio">Portfolio</a></li>
-                        <li> <a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header-content">
-                    <div class="header-text">
-                        <h1>Building the Future of AI & Web</h1>
-                        <h2>Hi, I'm <span>Hoor</span> Amir</h2>
-                        <p><span id="typed-text"></span></p>
-                        <div class="social-icons">
-                            <a href="https://www.instagram.com/hoor.amir.09?igsh=MXdnZ2I4OTZ4bTkyeQ=="><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://github.com/hoor-09"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/hoor-amir-449a90352"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        </div>
-                        <a href="#portfolio" class="cta-btn">See My Work</a>
-                    </div>
-                    <div class="header-image">
-                        <div class="image-bg"></div>
-                        <img src="images/main.png" alt="Hoor's image">
-                    </div>
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Hoor<span>.</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Hoor Amir <span class="glow">|</span> <br> Full-Stack Developer & AI Enthusiast</h1>
+                <p>I’m Hoor Amir, a full-stack developer and AI enthusiast passionate about building intelligent and user-friendly solutions.</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
+            <div class="hero-image">
+                <img src="/images/main.png" alt="Hoor Amir">
+            </div>
         </div>
-    </hero>
-    <!-- -------------------About------------------- -->
-    <div id="about">
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1" data-aos="fade-left" data-aos-duration="1000">
-                    <img src="images/image.png" alt="">
-                    <img src="images/background1.png" alt="">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="25">0</div>
+                    <div class="stat-text">Projects Completed</div>
                 </div>
-                <div class="about-col-2" data-aos="fade-up" data-aos-duration="1000">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I’m Hoor Amir, a programmer, web developer, data science enthusiast, and entrepreneur. With expertise in AI, machine learning, and full-stack development, I build intelligent and scalable solutions that bridge technology and real-world impact.
-
-                        As a developer, I specialize in writing efficient and optimized code, constantly refining my skills to create seamless digital experiences. As an entrepreneur, I’m the CEO and co-founder of H&S StylistAI, an AI-powered personal styling assistant redefining fashion with smart recommendations.
-                        
-                        This portfolio showcases my journey, skills, and projects. Let’s innovate and build the future together!</p>
-
-                        <div class="tab-titles" data-aos="fade-left" data-aos-duration="1000">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills" data-aos="fade-right" data-aos-duration="1000">
-                            <ul>
-                                <li><span>Entrepreneur</span><br> Co-founder of H&S StylistAI</li>
-
-                                <li><span>Web developent</span><br> Web app Developemnt</li>
-
-                                <li><span>App developent</span><br> Building Android/IOS apps</li>
-                            </ul>
-
-                            <div class="skills">
-                                <h3>Languages</h3>
-                                <div class="skill">
-                                    <span class="skill-name">HTML</span>
-                                    <div class="skill-bar">
-                                        <span style="width: 95%;"></span>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span class="skill-name">CSS</span>
-                                    <div class="skill-bar">
-                                        <span style="width: 85%;"></span>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span class="skill-name">JavaScript</span>
-                                    <div class="skill-bar">
-                                        <span style="width: 75%;"></span>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span class="skill-name">Python</span>
-                                    <div class="skill-bar">
-                                        <span style="width: 90%;"></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="tab-contents" id="experience" data-aos="fade-left" data-aos-duration="1000">
-                            <ul>
-                                <li><span>Dec-2024-Current</span><br> Founded H&S StylistAI and Building H&S StylistAI App, AI Powered Fashion styling app.</li>
-
-                                <li><span>2024</span><br> Co-President of coding club</li>
-
-                                <li><span>2023 - 2024</span><br> Built 7 projects using Python, HTML, CSS and Javascript</li>
-                            </ul>
-                        </div>
-
-                        <div class="tab-contents" id="education" data-aos="fade-up" data-aos-duration="1000">
-                            <ul>
-                                <li><span>Sep 2024 - present</span><br> BSc in Computing (Data Science Major)
-                                    & Diploma in AI
-                                    BIG academy KSA, EUCLEA
-                                    Expected Graduation: 2027</li>
-
-                                <li><span>Jan 2024 - July 2024</span><br> BBA 1 Semester,
-                                    Amity Online, Noida
-                                    CGPA 8.85</li>
-
-                                <li><span>2020 - 2023</span><br> High School (HSSC), FBISE,
-                                    Pakistan International School, Jeddah.
-                                    Subject: Computer Science, Math, Physics</li>
-                            </ul>
-                        </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-text">Ongoing Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="9">0</div>
+                    <div class="stat-text">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="22">0</div>
+                    <div class="stat-text">Technologies Learned</div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- -------------------Services------------------- -->
-     <div id="services">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Developement</h2>
-                    <ul>
-                        <li>Custom website design & development</li>
-                        <li>Frontend & backend development</li>
-                        <li>Responsive & user-friendly UI/UX</li>
-                    </ul>
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know more about my background, skills, and experience</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/images/background1.png" alt="About Me">
                 </div>
-
-                <div data-aos="fade-left" data-aos-duration="1000">
-                    <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>App Development</h2>
-                    <ul>
-                        <li>Mobile & web app development</li>
-                        <li>Cross-platform solutions (React Native, Flutter, etc.)</li>
-                        <li>Scalable & performance-optimized applications</li>
+                <div class="about-text">
+                    <h3>Full-Stack Developer | AI & Robotics Enthusiast</h3>
+                    <p>I’m currently pursuing my BSc in Computing with a major in Data Science, alongside a diploma in Artificial Intelligence.  
+                    Beyond academics, I love building things that connect the digital world with real-world impact - from web apps and mobile projects to robotics and AI-driven solutions.</p>
+                    <p>My journey started with a curiosity for coding, which grew into a passion for solving problems creatively. Today, I combine full-stack development skills with data science and AI/ML knowledge to design applications that are both functional and meaningful.</p>
+                    <ul class="info-list">
+                        <li><strong>Email:</strong> <span>hooramir09@gmail.com</span></li>
+                        <li><strong>From:</strong> <span>Saudi Arabia</span></li>
                     </ul>
-                </div>
+                    <a href="/images/Hoor's Resume.pdf" class="btn">Download CV</a>
 
-                <div data-aos="fade-right" data-aos-duration="1000">
-                    <i class="fa-solid fa-hexagon-nodes-bolt"></i>
-                    <h2>AI & Machine Learning Solutions</h2>
-                    <ul>
-                        <li>Data analysis & predictive modeling</li>
-                        <li>AI-powered applications & automation</li>
-                        <li>Machine learning model development</li>
-                    </ul>
-                </div>
-
-                <div data-aos="zoom-in" data-aos-duration="1000">
-                    <i class="fa-solid fa-terminal"></i>
-                    <h2>Software Development</h2>
-                    <ul>
-                        <li>Full-stack application development</li>
-                        <li>API integration & backend solutions</li>
-                        <li>Code optimization & debugging</li>
-                    </ul>
-                </div>
-
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <i class="fa-solid fa-database"></i>
-                    <h2>Data Science & Analytics</h2>
-                    <ul>
-                        <li>Data visualization & insights</li>
-                        <li>Machine learning algorithms</li>
-                        <li>Data-driven decision-making</li>
-                    </ul>
-                </div>
-
-                <div data-aos="flip-left" data-aos-duration="1000">
-                    <i class="fa-solid fa-business-time"></i>
-                    <h2>Tech Consulting & Startup Guidance</h2>
-                    <ul>
-                        <li>Business strategy & innovation</li>
-                        <li>AI-driven product development</li>
-                        <li>Technical roadmap planning</li>
-                    </ul>
                 </div>
             </div>
         </div>
-     </div>
+    </section>
+
+        <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+        <div class="section-title">
+            <h2>My Services</h2>
+            <p>Services I offer to help your business grow</p>
+        </div>
     
-    <!-- -------------------Portfolio------------------- -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="images/handslogo1.png" alt="">
-                    <div class="layer">
-                        <h3>H&S StylistAI-AI-Powered Fashion Assistant</h3>
-                        <p>An AI-powered fashion assistant that analyzes your wardrobe and recommends outfits based on your style, occasion, and trends. As the CEO & co-founder, I’m leading its development to revolutionize personal styling. </p>
-                        <a href="https://hoor-09.github.io/H-S-StylistAI/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <div class="work" data-aos="fade-left" data-aos-duration="1200">
-                    <img src="images/ticket.png" alt="">
-                    <div class="layer">
-                        <h3>Station Ticketing App</h3>
-                        <p>A smart station ticketing app that lets users book tickets based on travel zones and passenger categories (e.g., adult, student, senior). With a user-friendly interface and efficient booking system, it simplifies ticket management for a seamless travel experience.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <div class="work" data-aos="fade-right" data-aos-duration="1200">
-                    <img src="images/dictionary.png" alt="">
-                    <div class="layer">
-                        <h3>Dictionary Web App</h3>
-                        <p>A fast and intuitive dictionary web app that allows users to search for word meanings in real time. Built with a clean UI and efficient API integration, it delivers accurate meanings instantly. </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <div class="work" data-aos="fade-up" data-aos-duration="1200">
-                    <img src="images/wifi.png" alt="">
-                    <div class="layer">
-                        <h3>WiFi Password Card Generator</h3>
-                        <p>A simple tool that generates WiFi cards with network details and a QR code for quick and easy connection. Just scan the QR code to instantly connect without typing the password! </p>
-                        <a href="https://hoor-09.github.io/Wifi-card-Generator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            
-
-                <div class="work hidden" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="images/password.png" alt="">
-                    <div class="layer">
-                        <h3>Instant Password Generator</h3>
-                        <p>A tool that creates secure passwords based on your chosen category.</p>
-                        <a href="https://hoor-09.github.io/Password-Generator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+        <div class="services-container">
     
-                <div class="work hidden" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="images/baloon.png" alt="">
-                    <div class="layer">
-                        <h3>Birthday Animation</h3>
-                        <p>An animation with fireworks, floating balloons, and a flip card revealing a chocolate cake.</p>
-                        <a href="https://hoor-09.github.io/Birthday-Animation/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
+            <!-- Service 1 -->
+            <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
             </div>
-            <button class="btn" id="seeMoreBtn">See more</button>
+            <h3>Full-Stack Development</h3>
+            <p>
+                End-to-end development of websites and applications using modern
+                frameworks, ensuring speed, scalability, and clean UI/UX.
+            </p>
+            <a href="javascript:void(0)" class="btn btn-outline" onclick="toggleService('service1')">Learn More</a>
+            <div id="service1" class="service-details">
+                I build responsive, scalable apps using React, Node.js, and Tailwind. 
+                My focus is on performance, usability, and bringing your ideas into reality with clean, maintainable code.
+            </div>
+            </div>
+    
+            <!-- Service 2 -->
+            <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-brain"></i>
+            </div>
+            <h3>App & Project Development</h3>
+            <p>
+                Designing and building apps and custom projects — from concept to
+                deployment — that solve real-world problems.
+            </p>
+            <a href="javascript:void(0)" class="btn btn-outline" onclick="toggleService('service2')">Learn More</a>
+            <div id="service2" class="service-details">
+                I handle everything from brainstorming to deployment: UI/UX design, 
+                coding, testing, and launch. Whether it’s mobile apps or tailored 
+                projects, I deliver complete, production-ready solutions.
+            </div>
+            </div>
+    
+            <!-- Service 3 -->
+            <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-database"></i>
+            </div>
+            <h3>AI & Robotics Solutions</h3>
+            <p>
+                Creating innovative AI-powered applications and robotics prototypes
+                that bring intelligent automation to life.
+            </p>
+            <a href="javascript:void(0)" class="btn btn-outline" onclick="toggleService('service3')">Learn More</a>
+            <div id="service3" class="service-details">
+                From machine learning models to robotics prototypes, I combine AI and 
+                engineering to create solutions that can automate tasks and solve 
+                practical challenges in real-world scenarios.
+            </div>
+            </div>
+    
         </div>
-    </div>
-    <!-- -------------------Contact------------------- -->
-     <div id="contact">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
         <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title" data-aos="fade-up" data-aos-duration="1000">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> hooramir09@gmail.com</p>
-                    <p> <i class="fa-solid fa-square-phone"></i> +966 57 034 0071</p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/hoor.amir.09?igsh=MXdnZ2I4OTZ4bTkyeQ=="><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/hoor-09"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/hoor-amir-449a90352"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-name">Python</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                            <div class="skill-name">JavaScript</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <div class="skill-name">Java</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-cuttlefish"></i></div>
+                            <div class="skill-name">C++</div>
+                        </div>
                     </div>
-
-                    <a href="images/Hoor's Resume.pdf" download class="btn btn2">Download CV</a>
-
                 </div>
-                <div class="contact-right">
-                    <form data-aos="zoom-in" data-aos-duration="1200" name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required data-aos="fade-up" data-aos-duration="1000">
-                        <input type="email" name="Email" placeholder="Your Email" required data-aos="fade-up" data-aos-duration="1200">
-                        <textarea name="Message" rows="6" placeholder="Your Message" data-aos="fade-up" data-aos-duration="1400"></textarea>
-                        <button type="submit" class="btn btn2" data-aos="bounce-in" data-aos-duration="1000">Submit</button>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-desktop"></i> Web Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-name">HTML5</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-name">CSS3</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div class="skill-name">React</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <div class="skill-name">Node.js</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-name">MySQL</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-name">MongoDB</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-name">Git</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                            <div class="skill-name">Figma</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+                <p>Check out some of my recent projects</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="web">Web Development</button>
+                <button data-filter="ai">AI Projects</button>
+                <button data-filter="app">Applications</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="ai">
+                    <img src="/images/a4g92j.gif" alt="HG Car Game">
+                    <div class="portfolio-overlay">
+                        <h3>HandGesture Car Game</h3>
+                        <p>Hand gesture dtectin car game.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Python</span>
+                            <span class="portfolio-tag">OpenCV</span>
+                            <span class="portfolio-tag">PyGame</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://www.linkedin.com/posts/hoor-amir_opencv-python-mediapipe-activity-7357144151714349056-wLoc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFgUs3kBQwTz-BwfGXROMG4UIvK2wl5wUpo" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/hoor-09/OpenCV-Projects-H/tree/main/Project-01-HandCarGame" class="portfolio-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai">
+                    <img src="/images/a4jitd.gif" alt="HG Car Game">
+                    <div class="portfolio-overlay">
+                        <h3> Harry Potter’s Invisible Cloak</h3>
+                        <p>Hand gesture dtectin car game.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Python</span>
+                            <span class="portfolio-tag">OpenCV</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://www.linkedin.com/posts/hoor-amir_opencv-python-computervision-activity-7365827477748756481-ws4Y?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFgUs3kBQwTz-BwfGXROMG4UIvK2wl5wUpo" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/hoor-09/OpenCV-Projects-H/tree/main/Project-07-InvisibilityCloak" class="portfolio-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="/images/ai-fact-checker.png">
+                    <div class="portfolio-overlay">
+                        <h3>AI Fact Checker</h3>
+                        <p>Verify claims with AI-backed sources instantly.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML Tailwind CSS</span>
+                            <span class="portfolio-tag">JS</span>
+                            <span class="portfolio-tag">Google API</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://ai-fact-checker-ii51.vercel.app/" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/hoor-09/ai-fact-checker" class="portfolio-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80" alt="Centrala Ticketing System">
+                    <div class="portfolio-overlay">
+                        <h3>Centrala Ticketing System</h3>
+                        <p>Metro ticketing system with Python</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Python</span>
+                            <span class="portfolio-tag">Tkinter</span>
+                            <span class="portfolio-tag">GUI</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai">
+                    <img src="/images/a4jh3h.gif" alt="HG Car Game">
+                    <div class="portfolio-overlay">
+                        <h3>Real-Time Object Detection</h3>
+                        <p>Real-Time Object Detection using YOLOv8!</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Python</span>
+                            <span class="portfolio-tag">OpenCV</span>
+                            <span class="portfolio-tag">YOLOv8</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://www.linkedin.com/posts/hoor-amir_opencv-ai-opencv-activity-7359590415462744064-JIV6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFgUs3kBQwTz-BwfGXROMG4UIvK2wl5wUpo" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/hoor-09/OpenCV-Projects-H/tree/main/Project-02-ObjectDetection" class="portfolio-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Dictionary App">
+                    <div class="portfolio-overlay">
+                        <h3>Dictionary App</h3>
+                        <p>Modern dictionary web app with neon cyberpunk theme</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">CSS</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                            <span class="portfolio-tag">Flask</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai">
+                    <img src="/images/a4ji7r.gif" alt="HG Car Game">
+                    <div class="portfolio-overlay">
+                        <h3>Air Canvas Ultra</h3>
+                        <p>AI-Powered Hand Gesture Drawing</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Python</span>
+                            <span class="portfolio-tag">OpenCV</span>
+                            <span class="portfolio-tag">QuickDraw</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://www.linkedin.com/posts/hoor-amir_opencv-python-mediapipe-activity-7362075621499305986-h9Nf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFgUs3kBQwTz-BwfGXROMG4UIvK2wl5wUpo" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/hoor-09/OpenCV-Projects-H/tree/main/Project-03-AirCanvasUltra_Pro" class="portfolio-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80" alt="WiFi Card Generator">
+                    <div class="portfolio-overlay">
+                        <h3>WiFi Card Generator</h3>
+                        <p>Tool that generates QR code for WiFi login</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">CSS</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai">
+                    <img src="/images/a4kpax.gif">
+                    <div class="portfolio-overlay">
+                        <h3>Air Hockey Game Project</h3>
+                        <p>Hand-Controlled Air table hocky game</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Python</span>
+                            <span class="portfolio-tag">OpenCV</span>
+                            <span class="portfolio-tag">Pygame</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://www.linkedin.com/posts/hoor-amir_opencv-python-mediapipe-activity-7367268300445196289-D0tt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFgUs3kBQwTz-BwfGXROMG4UIvK2wl5wUpo" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/hoor-09/OpenCV-Projects-H/tree/main/Project-08-TableHockey" class="portfolio-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Get in touch with me for any questions or opportunities</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Talk About Your Project</h3>
+                    <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+966 55-XXX-XXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hooramir09@gmail.com</p>
+                        </div>
+                    </div>
+                
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Saudi Arabia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
                     </form>
-                    <span id="msg"></span>
                 </div>
             </div>
         </div>
-     </div>
-    
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="copyright">
-            <p>Copyright © 2024 Hoor Amir. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>Hoor Amir</h4>
+                    <p>AI/ML and Web Developer with a passion for creating beautiful and functional digital experiences.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/hoor-amir/" target="_blank" rel="noopener noreferrer">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/hoor-09" target="_blank" rel="noopener noreferrer">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/hoor_amir_09/" target="_blank" rel="noopener noreferrer">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </div>                      
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">AI Solutions</a></li>
+                        <li><a href="#">Data Analysis</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Hoor Amir. All Rights Reserved.</p>
+            </div>
         </div>
-    </footer> 
+    </footer>
 
-    <!-- Particles container -->
-    <div id="particles-js"></div>
-
-    <!-- External JavaScript files -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
-    <!-- Portfolio JS file -->
-    <script src="portfolio.js"></script> 
-
-    <!-- AOS library for animations -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init(); // Initialize AOS animations
+        // Create particle background
+        function createParticles() {
+            const particles = document.getElementById('particles');
+            const colors = ['rgba(108, 99, 255, 0.3)', 'rgba(255, 46, 99, 0.3)', 'rgba(255, 255, 255, 0.2)'];
+            
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                const size = Math.random() * 20 + 5;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.background = color;
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.animationDuration = `${Math.random() * 15 + 10}s`;
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                particles.appendChild(particle);
+            }
+        }
+        
+        // Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+        
+        // Portfolio Filtering
+        const filterButtons = document.querySelectorAll('.portfolio-filters button');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Animate stats counter
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            const speed = 200;
+            
+            statNumbers.forEach(statNumber => {
+                const target = parseInt(statNumber.getAttribute('data-count'));
+                const count = parseInt(statNumber.innerText);
+                const increment = Math.ceil(target / speed);
+                
+                if (count < target) {
+                    statNumber.innerText = count + increment;
+                    setTimeout(() => animateStats(), 1);
+                } else {
+                    statNumber.innerText = target;
+                }
+            });
+        }
+        
+        // Animate portfolio items on scroll
+        function animatePortfolio() {
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            portfolioItems.forEach(item => {
+                const position = item.getBoundingClientRect();
+                
+                if (position.top < window.innerHeight - 100) {
+                    item.classList.add('visible');
+                }
+            });
+        }
+        // Services expendible learn more
+        function toggleService(id) {
+            const el = document.getElementById(id);
+            el.classList.toggle("active");
+        }
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.padding = '15px 0';
+                header.style.background = 'rgba(18, 18, 18, 0.95)';
+                header.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.padding = '20px 0';
+                header.style.background = 'rgba(18, 18, 18, 0.9)';
+                header.style.boxShadow = 'none';
+            }
+            
+            animatePortfolio();
+        });
+        
+        // Initialize functions when page loads
+        window.addEventListener('load', () => {
+            createParticles();
+            animateStats();
+            animatePortfolio();
+        });
+        
+        // Scroll to top when page refreshes
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
     </script>
 </body >
 </html>
